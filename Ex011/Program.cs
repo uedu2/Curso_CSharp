@@ -19,11 +19,11 @@ namespace Ex011
 
             if (val / (pres * 12) < sal * 0.3)
             {
-                Console.WriteLine("Aprovado");
+                Console.WriteLine("Aprovado pois a prestação mensal não excedeu 30% do seu salário");
             }
             else
             {
-                Console.WriteLine("Reprovado");
+                Console.WriteLine("Reprovado pois a prestação mensal excedeu 30% do seu salário");
             }
         }
     }
