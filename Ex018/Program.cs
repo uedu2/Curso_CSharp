@@ -1,14 +1,13 @@
-﻿namespace Ex016
+﻿namespace Ex018
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            for (int i = 10; i >= 0; i--) 
+            for (int i = 0; i < 10; i++) 
             {
                 Console.WriteLine(i);
             }
-            
         }
     }
 }
