@@ -4,7 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string gen;
+
+            Console.WriteLine("Digite o gênero ");
+            gen = Console.ReadLine().ToUpper();
+
+            while (gen != "F" && gen != "M") 
+            {
+                Console.WriteLine("Digite o gênero");
+                gen = Console.ReadLine();
+            }
+            Console.WriteLine("bem-vindos e bem-vindas ao curso de programa com o C#!");
         }
     }
 }
