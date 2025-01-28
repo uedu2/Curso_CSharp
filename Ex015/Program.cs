@@ -10,10 +10,10 @@
             Random random = new Random();
             AlexKidd = random.Next(1,4);
             //AlexKidd = 1;
-           
-            
 
-            while (jooj != "não") 
+            jooj = "sim";
+
+            while ( jooj!= "não") 
             {
 
                 Console.WriteLine("vai! lá :3");
