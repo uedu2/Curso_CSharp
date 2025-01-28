@@ -15,7 +15,7 @@
             string cor = "Red";
 
 
-            Console.WriteLine("Primeiramente digite seu nome :3");
+            Console.Write("Primeiramente digite seu nome :3 ");
             nome = Console.ReadLine();
 
             if (nome == "fernando" || nome == "Fernando")
@@ -39,7 +39,7 @@
                 Console.WriteLine("5 - sair");
                 Jooj = Convert.ToInt32(Console.ReadLine());
                 switch (Jooj)
-                //<--- A Resposta Para a Vida, o Universo e Tudo Mais. ;)
+ //<--- A Resposta Para a Vida, o Universo e Tudo Mais. ;)
                 {
                     case 1:
                         Console.Clear();
@@ -58,12 +58,14 @@
 
                     case 3:
 
-                        Console.WriteLine("em construção");
+                        Console.WriteLine("em construção :(");
+                        Console.ReadKey();
                         break;
 
                     case 4:
 
-                        Console.WriteLine("em construção");
+                        Console.WriteLine("em construção :(");
+                        Console.ReadKey();
                         break;
                 }
             }
@@ -166,9 +168,9 @@
                     }
 
                 }
-
-                Console.WriteLine("Quer continuar Jogando? (Digite 2 para voltar ao Menu)");
                 Console.ReadKey();
+                Console.Write("Quer continuar Jogando? (Digite 2 para voltar ao Menu)");
+                
                 Jooj1 = Convert.ToInt32(Console.ReadLine());
             }
 
