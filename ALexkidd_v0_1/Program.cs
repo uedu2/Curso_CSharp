@@ -27,6 +27,17 @@
                 Console.Write("já estou até com medo do que pode acontecer...");
                 Console.ReadLine();
             }
+
+            if (nome == "guilherme" || nome == "Guilherme")
+            {
+                Console.Write("e ai");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write(" {0}", nome);
+                Console.ResetColor();
+                Console.Write("? tudo blz mano? XD");
+                Console.ReadLine();
+            }
+
             Console.Clear();
             while (Jooj != 5)
             {
@@ -35,7 +46,7 @@
                 Console.WriteLine("1 - Jokenpo");
                 Console.WriteLine("2 - Tente advinhar número que EU estou pensando");
                 Console.WriteLine("3 - Adivinharei o número que VOCÊ está pensando");
-                Console.WriteLine("4 - Escrever uma mensagem");
+                Console.WriteLine("4 - Escrever um recado");
                 Console.WriteLine("5 - sair");
                 Jooj = Convert.ToInt32(Console.ReadLine());
                 switch (Jooj)
@@ -53,6 +64,10 @@
 
                     case 2:
                         Console.Clear();
+                        Console.WriteLine("========");
+                        Console.WriteLine("|Recado|");
+                        Console.WriteLine("========");
+
                         Mensagem();
                         break;
 
@@ -188,6 +203,7 @@
         }
         static void Mensagem() //Função da Mensagem
         {
+
             string texto, nomedo;
             Console.WriteLine("Digite o nome do arquivo");
             nomedo = Console.ReadLine();
