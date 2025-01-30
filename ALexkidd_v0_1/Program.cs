@@ -44,19 +44,17 @@
                 Console.Clear();
                 Console.WriteLine("Okay {0} escolha uma opção", nome);
                 Console.WriteLine("1 - Jokenpo");
-                Console.WriteLine("2 - Tente advinhar número que EU estou pensando");
-                Console.WriteLine("3 - Adivinharei o número que VOCÊ está pensando");
-                Console.WriteLine("4 - Escrever um recado");
+                Console.WriteLine("2 - Escrever um recado");
+                //Console.WriteLine("2 - Tente advinhar número que EU estou pensando");
+                //Console.WriteLine("3 - Adivinharei o número que VOCÊ está pensando");
+                //Console.WriteLine("4 - Escrever um recado");
                 Console.WriteLine("5 - sair");
                 Jooj = Convert.ToInt32(Console.ReadLine());
                 switch (Jooj)
- //<--- A Resposta Para a Vida, o Universo e Tudo Mais. ;)
+
                 {
                     case 1:
-                        Console.Clear();
-                        Console.WriteLine("=========");
-                        Console.WriteLine("|Jokenpo|");
-                        Console.WriteLine("=========");
+
 
 
                         Jokenpo();
@@ -98,7 +96,10 @@
             {
                 Random random = new Random();
                 AlexKidd = random.Next(1, 4);
-
+                Console.Clear();
+                Console.WriteLine("=========");
+                Console.WriteLine("|Jokenpo|");
+                Console.WriteLine("=========");
                 Console.WriteLine("bora lá! escolha entre Pedra, Papel ou Tesoura (também pode ser 1,2 ou 3)");
                 KiddAlex = Console.ReadLine();
 
@@ -184,8 +185,9 @@
 
                 }
                 Console.ReadKey();
-                Console.Write("Quer continuar Jogando? (Digite 2 para voltar ao Menu)");
-                
+                Console.WriteLine();
+                Console.WriteLine("Quer continuar Jogando? (Digite 2 para voltar ao Menu)");
+
                 Jooj1 = Convert.ToInt32(Console.ReadLine());
             }
 
