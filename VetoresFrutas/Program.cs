@@ -12,9 +12,9 @@
                 Console.WriteLine(frutas[i] + " R$" + preco[i]);
             }
             Console.WriteLine();
-            Console.WriteLine("o maior preço é " + preco.Max());
-            Console.WriteLine("o maior preço é " + preco.Min());
-            Console.WriteLine("o maior preço é " + preco.Average());
+            Console.WriteLine("o maior preço é R$" + preco.Max());
+            Console.WriteLine("o menor preço é R$" + preco.Min());
+            Console.WriteLine("a média de preço é R$" + preco.Average());
         }
     }
 }
