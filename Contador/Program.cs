@@ -5,8 +5,8 @@
         static void Main(string[] args)
         {
 
-            contador(1,10,1);
-            contador(10, 0, 2);
+            //contador(1,10,1);
+            //contador(10, 0, 2);
 
             escrever("agora é sua vez de personalizar a contagem!");
             Console.Write("Digite o início: ");
@@ -15,6 +15,11 @@
             int final = Convert.ToInt32(Console.ReadLine());
             Console.Write("Digite o passo: ");
             int pass = Convert.ToInt32(Console.ReadLine());
+
+            if (pass<0) 
+            {
+                pass = pass*-1;
+            }
             contador(ini, final, pass);
         }
 
