@@ -28,7 +28,7 @@
                 Console.ReadLine();
             }
 
-            if (nome == "guilherme" || nome == "Guilherme")
+            if (nome == "guilherme" || nome == "Guilherme" || nome == "Gui" || nome == "gui")
             {
                 Console.Write("e ai");
                 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -184,8 +184,8 @@
                     }
 
                 }
-                Console.ReadKey();
                 Console.WriteLine();
+                Thread.Sleep(1000);
                 Console.WriteLine("Quer continuar Jogando? (Digite 2 para voltar ao Menu)");
 
                 Jooj1 = Convert.ToInt32(Console.ReadLine());
