@@ -37,18 +37,40 @@
                 Console.Write("? tudo blz mano? XD");
                 Console.ReadLine();
             }
+            else
+            {
+                Console.Write("opa!");
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.Write(" {0}", nome);
+                Console.ResetColor();
+                Console.Write(", bão?");
+                Console.ReadLine();
+            }
 
             Console.Clear();
             while (Jooj != 5)
             {
                 Console.Clear();
-                Console.WriteLine("Okay {0} escolha uma opção", nome);
+                Console.WriteLine("Okay, escolha uma opção: ");
+
+
+
+
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine();
+                Console.WriteLine("========");
+                Console.WriteLine("| Menu |");
+                Console.WriteLine("========");
+                Console.WriteLine();
+                Console.ResetColor();
                 Console.WriteLine("1 - Jokenpo");
                 Console.WriteLine("2 - Escrever um recado");
                 //Console.WriteLine("2 - Tente advinhar número que EU estou pensando");
                 //Console.WriteLine("3 - Adivinharei o número que VOCÊ está pensando");
                 //Console.WriteLine("4 - Escrever um recado");
                 Console.WriteLine("5 - sair");
+                Console.WriteLine();
                 Jooj = Convert.ToInt32(Console.ReadLine());
                 switch (Jooj)
 
@@ -62,9 +84,11 @@
 
                     case 2:
                         Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
                         Console.WriteLine("========");
                         Console.WriteLine("|Recado|");
                         Console.WriteLine("========");
+                        Console.ResetColor();
 
                         Mensagem();
                         break;
@@ -97,12 +121,16 @@
                 Random random = new Random();
                 AlexKidd = random.Next(1, 4);
                 Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("=========");
                 Console.WriteLine("|Jokenpo|");
                 Console.WriteLine("=========");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("bora lá! escolha entre Pedra, Papel ou Tesoura (também pode ser 1,2 ou 3)");
+                Console.WriteLine();
+                Console.ResetColor();
                 KiddAlex = Console.ReadLine();
-
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
                 if (AlexKidd == 1)// o Alex jogou Pedra
                 {
                     Console.WriteLine("Joguei Pedra");
@@ -185,10 +213,15 @@
 
                 }
                 Console.WriteLine();
-                Thread.Sleep(1000);
-                Console.WriteLine("Quer continuar Jogando? (Digite 2 para voltar ao Menu)");
+                Thread.Sleep(300);
+                Console.Write("Quer continuar Jogando? (Digite 2 para voltar ao Menu): ");
+                Console.ResetColor();
+                string pausa =Console.ReadLine();
+                if (pausa == "não" || pausa == "n" || pausa == "2" || pausa == "nao") 
+                {
+                    Jooj1 = 2;
+                }
 
-                Jooj1 = Convert.ToInt32(Console.ReadLine());
             }
 
 
@@ -205,14 +238,17 @@
         }
         static void Mensagem() //Função da Mensagem
         {
-
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             string texto, nomedo;
             Console.WriteLine("Digite o nome do arquivo");
+            Console.ResetColor();
             nomedo = Console.ReadLine();
 
             string caminho = $@"E:\Curso_C#\ALexkidd_v0_1\{nomedo}.txt";
 
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("Agora escreva a mensagem (mensagens curtas de apenas uma linha)");
+            Console.ResetColor();
             texto = Console.ReadLine();
             using (StreamWriter sw = new StreamWriter(caminho))
             {
