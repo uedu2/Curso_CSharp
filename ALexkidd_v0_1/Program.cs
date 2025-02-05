@@ -64,13 +64,17 @@
                 Console.WriteLine("========");
                 Console.WriteLine();
                 Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("1 - Jokenpo");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("2 - Escrever um recado");
                 //Console.WriteLine("2 - Tente advinhar número que EU estou pensando");
                 //Console.WriteLine("3 - Adivinharei o número que VOCÊ está pensando");
                 //Console.WriteLine("4 - Escrever um recado");
+                Console.ForegroundColor= ConsoleColor.Blue;
                 Console.WriteLine("5 - sair");
                 Console.WriteLine();
+                Console.ResetColor();
                 Jooj = Convert.ToInt32(Console.ReadLine());
                 switch (Jooj)
 
@@ -126,7 +130,9 @@
                 Console.WriteLine("|Jokenpo|");
                 Console.WriteLine("=========");
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine("bora lá! escolha entre Pedra, Papel ou Tesoura (também pode ser 1,2 ou 3)");
+                Console.Write("bora lá! escolha entre Pedra, Papel ou Tesoura");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.Write(" (também pode ser 1,2 ou 3)");
                 Console.WriteLine();
                 Console.ResetColor();
                 KiddAlex = Console.ReadLine();
@@ -214,7 +220,9 @@
                 }
                 Console.WriteLine();
                 Thread.Sleep(300);
-                Console.Write("Quer continuar Jogando? (Digite 2 para voltar ao Menu): ");
+                Console.Write("Quer continuar Jogando? ");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.Write("(Digite 2 para voltar ao Menu): ");
                 Console.ResetColor();
                 string pausa =Console.ReadLine();
                 if (pausa == "não" || pausa == "n" || pausa == "2" || pausa == "nao") 
