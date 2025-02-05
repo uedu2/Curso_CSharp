@@ -58,20 +58,24 @@
 
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
+                Thread.Sleep(300);
                 Console.WriteLine();
                 Console.WriteLine("========");
                 Console.WriteLine("| Menu |");
                 Console.WriteLine("========");
                 Console.WriteLine();
                 Console.ResetColor();
+                Thread.Sleep(400);
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("1 - Jokenpo");
+                Thread.Sleep(400);
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("2 - Escrever um recado");
                 //Console.WriteLine("2 - Tente advinhar número que EU estou pensando");
                 //Console.WriteLine("3 - Adivinharei o número que VOCÊ está pensando");
                 //Console.WriteLine("4 - Escrever um recado");
                 Console.ForegroundColor= ConsoleColor.Blue;
+                Thread.Sleep(400);
                 Console.WriteLine("5 - sair");
                 Console.WriteLine();
                 Console.ResetColor();
@@ -87,6 +91,7 @@
                         break;
 
                     case 2:
+                        Thread.Sleep(500);
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
                         Console.WriteLine("========");
@@ -125,13 +130,16 @@
                 Random random = new Random();
                 AlexKidd = random.Next(1, 4);
                 Console.Clear();
+                Thread.Sleep(300);
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("=========");
                 Console.WriteLine("|Jokenpo|");
                 Console.WriteLine("=========");
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Thread.Sleep(400);
                 Console.Write("bora lá! escolha entre Pedra, Papel ou Tesoura");
                 Console.ForegroundColor = ConsoleColor.DarkRed;
+                Thread.Sleep(200);
                 Console.Write(" (também pode ser 1,2 ou 3)");
                 Console.WriteLine();
                 Console.ResetColor();
@@ -219,7 +227,7 @@
 
                 }
                 Console.WriteLine();
-                Thread.Sleep(300);
+                Thread.Sleep(500);
                 Console.Write("Quer continuar Jogando? ");
                 Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.Write("(Digite 2 para voltar ao Menu): ");
